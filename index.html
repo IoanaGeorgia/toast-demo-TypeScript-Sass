@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined" rel="stylesheet">
+
+    <title>Sass - Typescript Vanilla JS app</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+
+    <div class="toastWrapper">
+
+
+                <div class="toast">
+                    <span class="material-icons">
+                        {{toastIcon}}
+                    </span>
+                    <span>
+                    <span class="toastText">{{toastText}}</span> toast notification</span>
+                    <button class="toastClose">
+                        <span class="material-icons-outlined">
+                            close
+                        </span>
+                    </button>
+                </div>
+
+
+    </div>
+
+    <div class="mainWrapper">
+        <button id="successButton" onclick="openToast('successToast')">Success</button>
+        <button id="infoButton" onclick="openToast('infoToast')">Info</button>
+        <button id="warningButton" onclick="openToast('warningToast')">Warning</button>
+        <button id="errorButton" onclick="openToast('errorToast')">Error</button>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
